@@ -10,7 +10,7 @@ public class Auto {
     private String color; 
     //Atributo de clase que almacena la cantidad de combustible del auto
     private double combustible; 
-    private Rueda auxilio= null;    // Opcional 1 tiene 0..1 ruedas
+    private Rueda auxiliar= null;    // Opcional 1 tiene 0..1 ruedas
     private ArrayList<Rueda> ruedas = new ArrayList<Rueda>();   // 1 a muchos ruedas
                             
     public void quitarRueda(Rueda r){
@@ -60,10 +60,10 @@ public class Auto {
         return ruedas;
     }
     public Rueda getAuxilio() {
-        return auxilio;
+        return auxiliar;
     }
     public void colocaAuxilio(Rueda rueda) {  // ASOCIACION
-        this.auxilio=rueda;
+        this.auxiliar=rueda;
         System.out.println("rueda de auxilio colocada!");
     }  
     // Código que soporta solo una rueda
